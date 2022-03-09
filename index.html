@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Budzet</title>
+  </head>
+  <body>
+    <header id="header-home">
+      <div class="container">
+        <div class="budget">
+          <div class="budget-title">
+            Raspoloziv budzet <span class="budget-title--month"></span>:
+          </div>
+          <div class="budget-value"></div>
+          <div class="budget-income my-1 p-2">
+            <div class="budget-income--text">Prihodi</div>
+            <div class="right">
+              <div class="budget-income--value">
+                0
+              </div>
+              <div class="budget-income--percent">&nbsp;</div>
+            </div>
+          </div>
+          <div class="budget-expenses my-1 p-2">
+            <div class="budget-expenses--text">Troškovi</div>
+            <div class="right">
+              <div class="budget-expenses--value">
+                0
+              </div>
+              <div class="budget-expenses--percent"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="bottom">
+      <div class="container">
+        <div class="add">
+          <select class="add-type">
+            <option value="inc" selected>+</option>
+            <option value="exp">-</option>
+          </select>
+          <input type="text" class="add-description" placeholder="Dodaj opis" />
+          <input type="number" class="add-value" placeholder="Suma" />
+          <button class="btn-main">Dodaj</button>
+        </div>
+      </div>
+    </section>
+    <section id="list">
+      <div class="container">
+        <div class="income">
+          <h2 class="income-title">Prihodi</h2>
+          <div class="income-list">
+          </div>
+        </div>
+        <div class="expenses">
+          <h2 class="expenses-title">Troškovi</h2>
+          <div class="expenses-list">
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="scripts/bundle.js"></script>
+</html>

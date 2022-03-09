@@ -1,0 +1,337 @@
+.container {
+  max-width: 1140px;
+  margin: auto;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.btn-main, .btn-red, .btn-light {
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+}
+
+.btn-main {
+  background-color: skyblue;
+  padding: 12px 15px;
+}
+
+.btn-red {
+  background-color: red;
+  padding: 5px 6px;
+}
+
+.btn-light {
+  background-color: skyblue;
+  padding: 5px 6px;
+}
+
+.btn-red:hover {
+  background-color: orangered !important;
+}
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: lightblue;
+}
+
+.p-1 {
+  padding: 0.5rem;
+}
+
+.p-2 {
+  padding: 1rem;
+}
+
+.p-3 {
+  padding: 1.5rem;
+}
+
+.p-4 {
+  padding: 2rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  color: #555;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+#header-home {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/back.png") no-repeat 100% center/cover;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/back.png") no-repeat 100% center/cover;
+  height: 40vh;
+  color: #fff;
+  position: relative;
+}
+
+.budget {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 550px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.budget-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.budget-value {
+  font-size: 40px;
+  font-weight: 300;
+  font-style: italic;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 7px;
+}
+
+.budget-income {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: skyblue;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-radius: 5px;
+}
+
+.budget-income--percent {
+  margin-left: 2px;
+  padding: 3px;
+  border-radius: 5px;
+  width: 25px;
+}
+
+.budget-expenses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: red;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-radius: 5px;
+}
+
+.budget-expenses--percent {
+  background-color: orangered;
+  margin-left: 5px;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+#bottom {
+  background-color: #f7f7f7;
+  height: 5rem;
+  padding: 14px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+#bottom .add {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#bottom .add-type {
+  width: 55px;
+  height: 44px;
+  border: 1px solid #e7e7e7;
+  font-size: 18px;
+  color: inherit;
+  margin-right: 10px;
+}
+
+#bottom .add-description {
+  width: 400px;
+}
+
+#bottom .add-description, #bottom .add-value {
+  border: 1px solid #e7e7e7;
+  color: inherit;
+  padding: 12px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#bottom .add-value {
+  width: 100px;
+}
+
+#list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 70px 10px;
+}
+
+#list .income {
+  width: 475px;
+  color: skyblue;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+#list .expenses {
+  width: 475px;
+  color: red;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+#list .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 10px 10px 5px;
+  border-radius: 3px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#list .item:first-child {
+  border-top: 1px solid #e7e7e7;
+}
+
+#list .item:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+#list .item-value {
+  margin-right: 5px;
+}
+
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.red {
+  background-color: red !important;
+}
+
+.red-focus:focus {
+  border: 1px solid red !important;
+}
