@@ -1,0 +1,202 @@
+@import "config";
+@import "utilities";
+
+// General Settings
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  color: #555;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+//Header
+#header {
+  &-home {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      $bg-image no-repeat 100% center / cover;
+    height: 40vh;
+    color: #fff;
+    position: relative;
+  }
+}
+
+.budget {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    align-self: center;
+  }
+
+  &-value {
+    font-size: 40px;
+    font-weight: 300;
+    font-style: italic;
+    align-self: center;
+    margin-bottom: 7px;
+  }
+
+  &-income {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    background-color: $main-color;
+    align-self: center;
+    border-radius: 5px;
+
+    &--percent {
+      margin-left: 2px;
+      padding: 3px;
+      border-radius: 5px;
+      width: 25px;
+    }
+  }
+
+  &-expenses {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    background-color: $red-color;
+    align-self: center;
+    border-radius: 5px;
+
+    &--percent {
+      background-color: $medium-color;
+      margin-left: 5px;
+      padding: 3px;
+      border-radius: 5px;
+      // width: 30px;
+    }
+  }
+}
+
+//Bottom
+#bottom {
+  background-color: #f7f7f7;
+  height: 5rem;
+  padding: 14px;
+  border-bottom: 1px solid #e7e7e7;
+
+  .add {
+    margin: 0 auto;
+    text-align: center;
+
+    &-type {
+      width: 55px;
+      height: 44px;
+      border: 1px solid #e7e7e7;
+      font-size: 18px;
+      color: inherit;
+      margin-right: 10px;
+      margin-bottom: 21px;
+    }
+
+    &-description {
+      width: 350px;
+    }
+
+    &-description,
+    &-value {
+      border: 1px solid #e7e7e7;
+      color: inherit;
+      padding: 12px 15px;
+      margin-right: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    &-value {
+      width: 100px;
+    }
+  }
+}
+
+// List
+#list {
+  display: flex;
+  justify-content: space-between;
+  margin: 110px 10px 30px 10px;
+
+  .income {
+    width: 475px;
+    color: $main-color;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  .expenses {
+    width: 475px;
+    color: $red-color;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 10px 10px 5px;
+    border-radius: 3px;
+
+    &:first-child {
+      border-top: 1px solid #e7e7e7;
+    }
+
+    &:nth-child(even) {
+      background-color: #f7f7f7;
+    }
+
+    &-value {
+      margin-right: 5px;
+    }
+  }
+}
+.right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.red {
+  background-color: $red-color !important;
+}
+
+.red-focus:focus {
+  border: 1px solid $red-color !important;
+}

@@ -6,13 +6,15 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
-.btn-main, .btn-red, .btn-light {
+.btn-main,
+.btn-red,
+.btn-light {
   display: inline-block;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -116,7 +118,8 @@ input[class^="btn-"]:hover {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
@@ -140,8 +143,16 @@ img {
 }
 
 #header-home {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/back.png") no-repeat 100% center/cover;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/back.png") no-repeat 100% center/cover;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url("../img/back.png") no-repeat 100% center/cover;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/back.png") no-repeat 100% center/cover;
   height: 40vh;
   color: #fff;
   position: relative;
@@ -154,21 +165,21 @@ img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 550px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .budget-title {
   font-size: 20px;
   margin-bottom: 10px;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .budget-value {
@@ -176,8 +187,8 @@ img {
   font-weight: 300;
   font-style: italic;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   margin-bottom: 7px;
 }
 
@@ -187,11 +198,11 @@ img {
   display: flex;
   width: 60%;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: skyblue;
   -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   border-radius: 5px;
 }
 
@@ -208,11 +219,11 @@ img {
   display: flex;
   width: 60%;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: red;
   -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   border-radius: 5px;
 }
 
@@ -249,7 +260,8 @@ img {
   width: 350px;
 }
 
-#bottom .add-description, #bottom .add-value {
+#bottom .add-description,
+#bottom .add-value {
   border: 1px solid #e7e7e7;
   color: inherit;
   padding: 12px 15px;
@@ -268,8 +280,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 110px 10px 30px 10px;
 }
 
@@ -297,15 +309,15 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 10px 10px 10px 5px;
   border-radius: 3px;
 }
@@ -327,11 +339,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .red {
