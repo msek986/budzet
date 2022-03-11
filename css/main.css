@@ -242,10 +242,11 @@ img {
   font-size: 18px;
   color: inherit;
   margin-right: 10px;
+  margin-bottom: 21px;
 }
 
 #bottom .add-description {
-  width: 400px;
+  width: 350px;
 }
 
 #bottom .add-description, #bottom .add-value {
@@ -253,6 +254,7 @@ img {
   color: inherit;
   padding: 12px 15px;
   margin-right: 10px;
+  margin-bottom: 15px;
   border-radius: 5px;
   font-size: 16px;
 }
@@ -268,7 +270,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 70px 10px;
+  margin: 110px 10px 30px 10px;
 }
 
 #list .income {
@@ -297,11 +299,15 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px 10px 10px 5px;
-  border-radius: 3px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 10px 10px 5px;
+  border-radius: 3px;
 }
 
 #list .item:first-child {
@@ -335,3 +341,4 @@ img {
 .red-focus:focus {
   border: 1px solid red !important;
 }
+/*# sourceMappingURL=main.css.map */
