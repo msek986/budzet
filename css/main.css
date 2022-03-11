@@ -283,7 +283,13 @@ img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 110px 10px 30px 10px;
+  margin: 30px 10px 30px 10px;
+}
+
+@media screen and (max-width: 800px) {
+  #list {
+    margin: 110px 10px 30px 10px;
+  }
 }
 
 #list .income {
