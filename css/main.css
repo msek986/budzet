@@ -286,7 +286,12 @@ img {
   margin: 30px 10px 30px 10px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 650px) {
+  #list {
+    margin: 50px 10px 30px 10px;
+  }
+}
+@media screen and (max-width: 450px) {
   #list {
     margin: 110px 10px 30px 10px;
   }
