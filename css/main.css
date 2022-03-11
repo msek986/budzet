@@ -119,7 +119,6 @@ input[class^="btn-"]:hover {
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 body {
@@ -156,6 +155,7 @@ img {
   height: 40vh;
   color: #fff;
   position: relative;
+  overflow: hidden;
 }
 
 .budget {
